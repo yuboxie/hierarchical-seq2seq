@@ -3,7 +3,7 @@
 A hierarchical sequence to sequence model similar to the hierarchical recurrent encoder-decoder (HRED) in the following paper.
 > Iulian Vlad Serban, Alessandro Sordoni, Yoshua Bengio, Aaron C. Courville, and Joelle Pineau. Building End-To-End Dialogue Systems Using Generative Hierarchical Neural Network Models. AAAI 2016.
 
-The model consists of three RNNs--at each time step, the encoder RNN takes one utterance as input and encodes it into a fixed-sized context vector, which is the input to the context RNN, and then the decoder RNN generates the response by decoding the output of the context RNN. Unlike the original paper, we use GRU instead of LSTM, and context vector serves only as the initial hidden state of the decoder RNN.
+The model consists of three RNNs. At each time step, the encoder RNN takes one utterance as input and encodes it into a fixed-sized context vector, which is the input to the context RNN, and then the decoder RNN generates the response by decoding the output of the context RNN. Unlike the original paper, we use GRU instead of LSTM, and the context vector serves only as the initial hidden state of the decoder RNN.
 
 ## Dataset
 We use the [DailyDialog](http://yanran.li/dailydialog.html) dataset, which contains 13,118 multi-turn dialogs in total. In addition, each utterance in each dialog is labeled with one of the Ekman's six emotions plus a neutral one.
