@@ -10,6 +10,8 @@ We use the [DailyDialog](http://yanran.li/dailydialog.html) dataset, which conta
 > Yanran Li, Hui Su, Xiaoyu Shen, Wenjie Li, Ziqiang Cao, and Shuzi Niu. DailyDialog: A Manually Labelled Multi-turn Dialogue Dataset. IJCNLP 2017.
 
 ## How to Run
+The code is written in Python 3.
+
 Please download the dataset from the link provided above, and then extract everything from the `ijcnlp_dailydialog.zip` file. Rename the extracted folder to `corpus`. Run `python read.py` to preprocess the text data. To train the model, run `python main.py`. To predict, run `python main.py --predict`, and make sure that you have a space before each punctuation when you type some input text. For various command line arguments, please see the source files.
 
 ## TODO
