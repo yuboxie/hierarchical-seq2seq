@@ -1,6 +1,7 @@
 # Project specific files
 corpus/*
 data/*
+model/*
 sample.py
 
 # Compiled source #
